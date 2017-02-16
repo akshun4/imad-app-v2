@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 
 var articles={
-    articleOne:{
+    'article-one':{
         title:'Article One|Akshun',
         heading:'Article One',
         date:'Feb 16, 2017',
@@ -17,7 +17,7 @@ var articles={
                     This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
                 </p>`
     },
-    articleTwo:{
+    'article-two':{
         title:'Article Two|Akshun',
         heading:'Article Two',
         date:'Feb 16, 2017',
@@ -31,7 +31,7 @@ var articles={
                     This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
                 </p>`
     },
-    articleThree:{
+    'article-three':{
         title:'Article Three|Akshun',
         heading:'Article Three',
         date:'Feb 16, 2017',
@@ -91,7 +91,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-    res.send(createTemplate(articles[articleOne]));
+    res.send(createTemplate(articles[article-one]));
 });
 
 app.get('/article-two',function(req,res){
