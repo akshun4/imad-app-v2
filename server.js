@@ -91,15 +91,15 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-    res.send(createTemplate(articleOne));
+    res.send(createTemplate(articles[articleOne]));
 });
 
 app.get('/article-two',function(req,res){
-    res.send(createTemplate(articleTwo));
+    res.send(createTemplate(articles[articleTwo]));
 });
 
 app.get('/article-three',function(req,res){
-    res.send(createTemplate(articleThree));
+    res.send(createTemplate(articles[articleThree]));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
