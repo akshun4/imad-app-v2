@@ -7,9 +7,9 @@ element.innerHTML="yeah...not really"
 var img=document.getElementById("madi");
 var marginLeft=0;
 function moveRight(){
-    marginLeft=marginLeft+10.0;
+    marginLeft=marginLeft+1.0;
     img.style.marginLeft=marginLeft+'px';
 }
 img.onclick=function(){
-    var interval= setInterval(moveRight,100);
+    var interval= setInterval(moveRight,50);
 }
