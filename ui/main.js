@@ -24,12 +24,12 @@ button.onclick= function(){
     request.send(null);
 };
 
-var nameInput=document.getElementById('name1');
-var name=nameInput.value;
+
 var submit=document.getElementById('submit_btn');
 
 submit.onclick = function(){
-    
+    var nameInput=document.getElementById('name1');
+    var name=nameInput.value;
     // Make a request to the counter endpoint
     var request=new XMLHttpRequest();
     
