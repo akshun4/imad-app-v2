@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
-//var articles={
+var articles={
     'article-one':{
         title:'Article One|Akshun',
         heading:'Article One',
@@ -39,7 +39,7 @@ var path = require('path');
     }
 };
 
-//function createTemplate(data){
+function createTemplate(data){
     var title=data.title;
     var heading=data.heading;
     var date=data.date;
