@@ -49,10 +49,10 @@ submit.onclick = function(){
             var ul=document.getElementById('namelist');
             ul.innerHTML=list.toString();
             }
-        }
+        }};
     // Make the request
     request.open('GET','http://akshun4.imad.hasura-app.io/submit-name/:'+name);
     request.send(null);
-    };
+    
 };
     
