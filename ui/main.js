@@ -25,7 +25,7 @@ button.onclick= function(){
 };
 
 var nameInput=document.getElementById('name1');
-var namev=nameInput.value;
+var name=nameInput.value;
 var submit=document.getElementById('submit_btn');
 
 submit.onclick = function(){
@@ -51,7 +51,7 @@ submit.onclick = function(){
             }
         }
     // Make the request
-    request.open('GET','http://akshun4.imad.hasura-app.io/submit-name/:'+namev);
+    request.open('GET','http://akshun4.imad.hasura-app.io/submit-name/:'+name);
     request.send(null);
     };
 };
